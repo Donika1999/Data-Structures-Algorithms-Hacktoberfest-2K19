@@ -21,16 +21,13 @@ void quick_sort(int a[], int left, int right) {
         }
     }
 
-    if (left < j)
-        quick_sort(a, left, j);
-    if (i < right)
-        quick_sort(a, i, right);
+   
 }
 
 int main(void) {
     int a[10] = { 10, 7, 9, 4, 6, 2, 5, 6, 84, 12};
     int a_size = sizeof(a)/sizeof(a[0]);
-
+    //calling function
     quick_sort(a, 0, a_size-1);
 
     for (int i = 0; i < a_size; i++) {
